@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid grey;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #0000003d;
+}
+
+label {
+    margin-right: 20px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.color
+{
+    width: 170px;
+}
+
+.new-btn {
+    font-size: 14px;
+    padding: 6px;
+}
+.btn {
+    width: 48%;
+    display: none;
+}
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

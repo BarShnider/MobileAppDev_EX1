@@ -1,0 +1,15 @@
+body {
+    font-family: heebo;
+    background-color: #4958bd;
+    color: #c1c1c1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
