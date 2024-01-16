@@ -54,20 +54,14 @@ playAudio();
 
 function playAudio() {
     let audio = new Audio('quack.mp3');
-
-    // Set the number of times to play
     let playCount = 3;
-
-    // Function to handle the 'ended' event and play the next iteration
     audio.addEventListener('ended', function() {
         if (playCount > 1) {
             playCount--;
-            audio.currentTime = 0; // Reset the playback position
+            audio.currentTime = 0; 
             audio.play();
         }
     });
-
-    // Start playing the audio for the first time
     audio.play();
 }
 

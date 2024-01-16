@@ -24,7 +24,7 @@ class Clock {
 $(document).ready(function () {
   function populateOptions(selectElement, start, end) {
     for (let i = start; i <= end; i++) {
-      let optionValue = i < 10 ? "0" + i : i.toString(); // Add leading zero for single-digit values
+      let optionValue = i < 10 ? "0" + i : i.toString();
       selectElement.append(
         $("<option>", { value: optionValue, text: optionValue })
       );
@@ -56,7 +56,6 @@ function onSubmit(e) {
   console.log(clockArr);
   document.querySelector("form").reset();
   if (clockArr.length == 5) {
-    // alert("you reached 5 clocks!")
     renderClocks();
     return;
   }
@@ -75,6 +74,3 @@ function renderClocks() {
 }
 
 let clockArr = [];
-// let clockObj = new Clock(12,45,3);
-// console.log(clockObj.convertToSeconds())
-// console.log(clockObj.show())
